@@ -25,7 +25,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     
-    # ⬅️ KÖTELEZŐ: Ez adja meg a futtatási környezetet, és itt kell lennie!
+    # KÖTELEZŐ: Ez adja meg a futtatási környezetet
     runs-on: ubuntu-latest 
     
     steps:
@@ -44,8 +44,8 @@ jobs:
 
       # 2. Flutter buildelés
       - name: Flutter Build Web
-        # Feltételezve, hogy a repód neve LookBook. Ha más a neve, azt írd ide!
-        run: flutter build web --release --base-href /LookBook/
+        # ⬅️ JAVÍTOTT RÉSZ: A base-href most már kisbetűs (/lookbook/), hogy illeszkedjen az URL-hez.
+        run: flutter build web --release --base-href /lookbook/
 
       # 3. Pages beállítás (Konfigurálja a GitHub Pages környezetet)
       - name: Setup Pages
