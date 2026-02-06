@@ -11,7 +11,7 @@ class KThemeColors {
 }
 
 class KThemeAssets {
-  static const String largeImageUrl = 'assets/eso1.jpg'; // Vagy 'https://picsum...'
+  static const String largeImageUrl = 'assets/eso1.jpg';
   static const String smallImage1Url = 'assets/eso2.jpg';
   static const String smallImage2Url = 'assets/eso3.jpg';
   static const String smallImage3Url = 'assets/eso1.jpg';
